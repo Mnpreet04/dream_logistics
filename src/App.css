@@ -50,6 +50,12 @@
 .ant-menu-item-selected span {
   color: black !important;
 }
+.ant-btn-primary:focus,
+.ant-btn-primary:hover {
+  color: #fff;
+  border-color: #40e0d0 !important;
+  background: #40e0d0 !important;
+}
 
 .ant-btn-primary {
   background: #40e0d0;
@@ -60,13 +66,6 @@
 .ant-btn-primary span {
   color: black;
   font-weight: 600;
-}
-
-.ant-btn-primary:focus,
-.ant-btn-primary:hover {
-  color: #fff;
-  border-color: #40e0d0;
-  background: #40e0d0;
 }
 
 /* .header .ant-menu {

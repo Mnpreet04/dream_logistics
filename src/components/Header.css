@@ -6,6 +6,7 @@
   padding-right: 4%;
   background-color: transparent;
   height: 64px;
+  position: fixed;
 }
 .header-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -65,4 +66,8 @@
   display: flex;
   align-self: center;
   padding-left: 5px;
+}
+
+.header .menu-item-list {
+  width: 70vw;
 }

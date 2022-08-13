@@ -36,3 +36,86 @@
     transform: rotate(360deg);
   }
 }
+
+.mainLayout .ant-layout-header {
+  background-color: #f8f8f8 !important;
+  padding: 0;
+  height: auto;
+  /* line-height: 3.5; */
+}
+
+.ant-menu-title-content {
+  color: white !important;
+}
+.ant-menu-item-selected span {
+  color: black !important;
+}
+
+.ant-btn-primary {
+  background: #40e0d0;
+  border-radius: 20px;
+  border: none;
+}
+
+.ant-btn-primary span {
+  color: black;
+  font-weight: 600;
+}
+
+.ant-btn-primary:focus,
+.ant-btn-primary:hover {
+  color: #fff;
+  border-color: #40e0d0;
+  background: #40e0d0;
+}
+
+/* .header .ant-menu {
+  border: 0;
+  background: none !important;
+}
+
+.header .ant-menu li.ant-menu-item {
+  position: relative;
+  color: #333;
+}
+
+.header .ant-menu li.ant-menu-item:before,
+.header .ant-menu li.ant-menu-item:after {
+  content: "";
+  background: #1890ff;
+  width: 1px;
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 30%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.header .ant-menu li.ant-menu-item:after {
+  left: auto;
+  right: 30%;
+}
+
+.header .ant-menu li.ant-menu-item,
+.header .ant-menu li.ant-menu-item-selected {
+  border: 0 !important;
+}
+
+.header .ant-menu li.ant-menu-item-selected,
+.header .ant-menu li.ant-menu-item:hover {
+  color: #1890ff;
+  background: none;
+}
+
+.header .ant-menu li.ant-menu-item-selected:before,
+.header .ant-menu li.ant-menu-item:hover:before {
+  left: 5%;
+  opacity: 1;
+}
+
+.header .ant-menu li.ant-menu-item-selected:after,
+.header .ant-menu li.ant-menu-item:hover:after {
+  right: 5%;
+  opacity: 1;
+} */

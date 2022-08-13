@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab:wght@700&display=swap");
+
+.header {
+  display: flex;
+  padding-left: 4%;
+  padding-right: 4%;
+  background-color: transparent;
+  height: 64px;
+}
+.header-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assests/background.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.menu-item-list {
+  justify-content: end;
+  width: 100%;
+  background-color: transparent !important;
+}
+.header-font {
+  display: flex;
+  line-height: normal;
+  width: 130px;
+}
+.upper {
+  font-family: "Roboto Slab", serif;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 8px;
+}
+.lower {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 6px;
+  color: #40e0d0;
+}
+.logo {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.horizontal-line {
+  line-height: normal;
+  width: 95%;
+  border: none;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+
+  height: 2px;
+  background: #40e0d0;
+}
+
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected,
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+  background-color: #40e0d0 !important;
+}
+
+.header-button {
+  display: flex;
+  align-self: center;
+  padding-left: 5px;
+}

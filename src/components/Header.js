@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import "./Header.css";
 import circle from "../assests/image.png";
 import { Button } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
 
 function Header(props) {
   return (
@@ -14,6 +15,7 @@ function Header(props) {
           <hr className="horizontal-line"></hr>
           <div className="header-font lower">LOGISTICS</div>
         </div>
+
         <Menu className="menu-item-list" theme="dark" mode="horizontal">
           <Menu.Item key="1">
             <Link
@@ -49,6 +51,45 @@ function Header(props) {
             </Link>
           </Menu.Item>
         </Menu>
+
+        <Menu className="mobile-menu-list" mode="horizontal">
+          <Menu.SubMenu key="SubMenu" icon={<MenuOutlined />}>
+            <Menu.Item key="1">
+              <Link
+                to="section0"
+                spy={true}
+                smooth={true}
+                // offset={-100}
+                duration={1000}
+              >
+                Home
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="2">
+              <Link
+                to="section1"
+                spy={true}
+                smooth={true}
+                // offset={-100}
+                duration={1000}
+              >
+                What we do?
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="3">
+              <Link
+                to="section2"
+                spy={true}
+                smooth={true}
+                // offset={-100}
+                duration={2000}
+              >
+                About Us
+              </Link>
+            </Menu.Item>
+          </Menu.SubMenu>
+        </Menu>
+
         <Button className="header-button" type="primary">
           Work with Us?
         </Button>
@@ -60,6 +101,10 @@ function Header(props) {
         </h1>
         <h1>Delivering Success</h1>
         <h3>Emerging trucking company serving for building nations</h3>
+
+        <Button className="header-contact-button" type="primary">
+          CONTACT US
+        </Button>
       </div>
     </div>
   );

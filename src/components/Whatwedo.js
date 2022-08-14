@@ -1,6 +1,5 @@
 import React from "react";
 import "./Whatwedo.css";
-import truck1 from "../assests/truck1.jpg";
 
 function Whatwedo() {
   return (

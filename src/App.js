@@ -5,6 +5,7 @@ import AppHeader from "./components/Header";
 import Hero from "./components/Hero";
 import Whatwedo from "./components/Whatwedo";
 import AboutUs from "./components/AboutUs";
+import ContactUs from "./components/ContactUs";
 import "antd/dist/antd.min.css";
 import "./App.css";
 const { Header, Footer } = Layout;
@@ -29,6 +30,7 @@ const App = () => {
       <Hero />
       <Whatwedo />
       <AboutUs />
+      <ContactUs />
     </Layout>
     // <Footer style={{ textAlign: "center" }}>Dream Logistics ©2022 </Footer>
   );

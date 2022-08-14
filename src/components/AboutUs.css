@@ -1,0 +1,72 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .lower-cont {
+  display: flex;
+  flex-direction: column;
+} */
+
+.lower-cont .image-class {
+  display: flex;
+  justify-content: end;
+  width: 40%;
+}
+.lower-cont .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* .about-us .lower-cont .card {
+  display: flex;
+}
+*/
+#section2 {
+  height: 100vh;
+}
+
+.upper-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.lower-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.upper-cont h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 80px;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.upper-cont p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.image-class img {
+  width: 200px;
+  height: 130px;
+}

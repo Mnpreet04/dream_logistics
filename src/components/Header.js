@@ -5,6 +5,7 @@ import "./Header.css";
 import circle from "../assests/image.png";
 import { Button } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
+import { LINKS } from "./SectionsArray";
 
 function Header(props) {
   return (
@@ -16,13 +17,29 @@ function Header(props) {
           <div className="header-font lower">LOGISTICS</div>
         </div>
 
-        <Menu className="menu-item-list" theme="dark" mode="horizontal">
-          <Menu.Item key="1">
+        <Menu className="menu-item-list active" theme="dark" mode="horizontal">
+          {LINKS.map((link) => {
+            return (
+              <Menu.Item key={link.id}>
+                <Link
+                  to={link.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={1000}
+                >
+                  {link.text}
+                </Link>
+              </Menu.Item>
+            );
+          })}
+
+          {/* <Menu.Item key="1">
             <Link
               to="section0"
               spy={true}
               smooth={true}
-              // offset={-100}
+              //offset={-100}
               duration={1000}
             >
               Home
@@ -33,7 +50,7 @@ function Header(props) {
               to="section1"
               spy={true}
               smooth={true}
-              // offset={-100}
+              //offset={-100}
               duration={1000}
             >
               What we do?
@@ -49,12 +66,27 @@ function Header(props) {
             >
               About Us
             </Link>
-          </Menu.Item>
+          </Menu.Item> */}
         </Menu>
 
         <Menu className="mobile-menu-list" mode="horizontal">
           <Menu.SubMenu key="SubMenu" icon={<MenuOutlined />}>
-            <Menu.Item key="1">
+            {LINKS.map((link) => {
+              return (
+                <Menu.Item key={link.id}>
+                  <Link
+                    to={link.to}
+                    spy={true}
+                    smooth={true}
+                    //offset={-100}
+                    duration={1000}
+                  >
+                    {link.text}
+                  </Link>
+                </Menu.Item>
+              );
+            })}
+            {/* <Menu.Item key="1">
               <Link
                 to="section0"
                 spy={true}
@@ -86,7 +118,7 @@ function Header(props) {
               >
                 About Us
               </Link>
-            </Menu.Item>
+            </Menu.Item> */}
           </Menu.SubMenu>
         </Menu>
 

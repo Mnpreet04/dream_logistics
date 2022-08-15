@@ -5,6 +5,11 @@ import "./ContactUs.css";
 const ContactUs = () => {
   return (
     <section className="contact-us" id="section3">
+      {/* <div className="contact-us-heading">
+      <h1>Contact Us</h1>
+        <h2>We are there for you always.</h2>
+       </div> */}
+
       <div className="contact-us-container">
         <h1>Contact Us</h1>
         <h2>We are there for you always.</h2>

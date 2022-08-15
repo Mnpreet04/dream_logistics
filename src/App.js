@@ -15,7 +15,7 @@ const App = () => {
 
   const changeBackground = () => {
     console.log(headerClass);
-    if (window.scrollY > 650) {
+    if (window.scrollY > 500) {
       setHeaderClass(true);
     } else {
       setHeaderClass(false);
@@ -27,7 +27,7 @@ const App = () => {
     <Layout className="mainLayout">
       {/* <Header>{}</Header> */}
       <AppHeader className={headerClass ? "header active" : "header"} />
-      <Hero />
+      {/* <Hero /> */}
       <Whatwedo />
       <AboutUs />
       <ContactUs />

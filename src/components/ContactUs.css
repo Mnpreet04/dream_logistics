@@ -3,19 +3,28 @@
 }
 .contact-us-container {
   display: flex;
-  justify-content: center !important;
-  flex-direction: column;
+  justify-content: space-between !important;
+  flex-direction: row;
   align-items: center;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 4%;
+  background-image: url("../assests/contactus.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
-/* .contact-us > h1{
+.contact-us-heading > h1 {
   margin-top: 80px;
   font-family: "Montserrat", sans-serif;
   margin-top: 80px;
   font-size: 38px;
   font-weight: 700;
   margin-bottom: 10px;
-} */
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .contact-us-container > h1 {
   margin-top: 80px;
@@ -28,26 +37,26 @@
 
 .contact-us-upper-container {
   display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10%;
+  margin-left: auto;
   flex-direction: column;
-  width: 60vw;
-  justify-content: space-around;
-  margin-top: 2%;
 }
 
-.contact-us-upper-container h1{
-  background-color: white;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 10px;
-  width: 40vw;
-  margin-left: 9rem;
+.contact-us-heading span:nth-child(2) {
+  font-size: 14px;
+  width: 200px;
 }
 
-/* .contact-us > h2{
+.contact-us-heading > h2 {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   background: #40e0d0;
   transform: skewX(-10deg);
-} */
+  width: 50%;
+  margin: auto;
+}
 
 .contact-us-container > h2 {
   font-size: 24px;
@@ -60,28 +69,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 .contact-us-heading > span {
   margin: auto;
+  font-family: "Montserrat", sans-serif;
 }
 .contact-us-heading > span span {
   color: #40e0d0;
-}
-
-.contact-us-form-container {
-  display: flex;
-  justify-content: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 10px;
-  width: 60vw;
-  background-color: white;
-  padding: 3%;
 }
 
 .contact-us-form {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 4%;
 }
 
 .contact-us-row {
@@ -91,22 +93,97 @@
 
 .contact-us-row-first > input {
   width: 100%;
-  background-color: #e8e8e8;
-  border: 1px solid;
+  background-color: #f8f8f8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #40e0d0;
 }
-
+.contact-us-row-first > input:focus,
+.contact-us-row-second > input:focus,
+.contact-us-row-third > textarea:focus {
+  outline: none;
+}
 .contact-us-row-second > input {
   width: 100%;
-  background-color: #e8e8e8;
-  border: 1px solid;
+  background-color: #f8f8f8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #40e0d0;
 }
 
 .contact-us-row-third > textarea {
   width: 100%;
-  background-color: #e8e8e8;
-  border: 1px solid;
+  background-color: #f8f8f8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #40e0d0;
 }
 
-.contact-us-row-fourth > button {
+.contact-us-row-fourth > input {
+  font-family: "Montserrat", sans-serif;
   width: 100% !important;
+  background-color: #40e0d0;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  #section3 {
+    height: auto;
+  }
+
+  .contact-us-heading > h1 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 140px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .contact-us-heading > h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    width: 90%;
+    position: relative;
+    color: black;
+    align-self: center;
+    background: #40e0d0;
+    transform: skewX(-10deg);
+  }
+
+  .contact-us-container {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 4%;
+    background-image: none;
+  }
+
+  .contact-us-upper-container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .contact-us-heading span:nth-child(2) {
+    font-size: 12px;
+    width: 60%;
+  }
+
+  .contact-us-row-fourth > input {
+    font-family: "Montserrat", sans-serif;
+    width: 100% !important;
+    background-color: #40e0d0;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    height: 30px;
+  }
 }

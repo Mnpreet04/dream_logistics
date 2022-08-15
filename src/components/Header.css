@@ -11,7 +11,7 @@
 
 .header.active {
   background-color: rgb(41, 39, 39) !important;
-  top:0;
+  top: 0;
 }
 
 .mobile-menu-list {
@@ -35,7 +35,7 @@
   background-color: transparent !important;
 }
 
-.menu-item-list .active{
+.menu-item-list .active {
   border-bottom: 3px solid #40e0d0;
 }
 
@@ -141,7 +141,9 @@
 .header-contact-button {
   display: none !important;
 }
-
+.header > ul {
+  align-items: center !important;
+}
 @media only screen and (max-width: 600px) {
   .mobile-menu-list {
     display: flex !important;
@@ -204,21 +206,24 @@
     line-height: normal;
     position: relative;
     color: black;
-    font-size: 14px;
+    font-size: 12px;
     background: #40e0d0;
     transform: skewX(-10deg);
     display: inline-block;
   }
 
   .header-container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
-      url("../assests/background.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("../assests/background2.jpg"); */
+
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("../assests/background2.jpg") 0 0 / cover;
     height: 100vh;
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
     position: relative;
-    background-attachment: fixed;
+    background-attachment: fixed; */
   }
 
   .hero-text .header-contact-button {

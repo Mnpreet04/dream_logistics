@@ -1,8 +1,8 @@
 import { Layout } from "antd";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import React from "react";
 import AppHeader from "./components/Header";
-import Hero from "./components/Hero";
+
 import Whatwedo from "./components/Whatwedo";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
@@ -11,10 +11,14 @@ import "./App.css";
 const { Header, Footer } = Layout;
 
 const App = () => {
+  const myRef = useRef(null);
+
+  const executeScroll = () =>
+    myRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+
   const [headerClass, setHeaderClass] = useState(false);
 
   const changeBackground = () => {
-    console.log(headerClass);
     if (window.scrollY > 500) {
       setHeaderClass(true);
     } else {
@@ -26,13 +30,16 @@ const App = () => {
   return (
     <Layout className="mainLayout">
       {/* <Header>{}</Header> */}
-      <AppHeader className={headerClass ? "header active" : "header"} />
+      <AppHeader
+        className={headerClass ? "header active" : "header"}
+        scrollHandler={executeScroll}
+      />
       {/* <Hero /> */}
       <Whatwedo />
       <AboutUs />
-      <ContactUs />
+      <ContactUs refProp={myRef} />
+      <Footer style={{ textAlign: "center" }}>Dream Logistics ©2022 </Footer>
     </Layout>
-    // <Footer style={{ textAlign: "center" }}>Dream Logistics ©2022 </Footer>
   );
 };
 

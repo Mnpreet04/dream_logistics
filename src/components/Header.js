@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Menu } from "antd";
 import { Link } from "react-scroll";
 import "./Header.css";
@@ -21,52 +21,12 @@ function Header(props) {
           {LINKS.map((link) => {
             return (
               <Menu.Item key={link.id}>
-                <Link
-                  to={link.to}
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={1000}
-                >
+                <Link to={link.to} spy={true} smooth={true} duration={1000}>
                   {link.text}
                 </Link>
               </Menu.Item>
             );
           })}
-
-          {/* <Menu.Item key="1">
-            <Link
-              to="section0"
-              spy={true}
-              smooth={true}
-              //offset={-100}
-              duration={1000}
-            >
-              Home
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <Link
-              to="section1"
-              spy={true}
-              smooth={true}
-              //offset={-100}
-              duration={1000}
-            >
-              What we do?
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <Link
-              to="section2"
-              spy={true}
-              smooth={true}
-              // offset={-100}
-              duration={2000}
-            >
-              About Us
-            </Link>
-          </Menu.Item> */}
         </Menu>
 
         <Menu className="mobile-menu-list" mode="horizontal">
@@ -86,43 +46,14 @@ function Header(props) {
                 </Menu.Item>
               );
             })}
-            {/* <Menu.Item key="1">
-              <Link
-                to="section0"
-                spy={true}
-                smooth={true}
-                // offset={-100}
-                duration={1000}
-              >
-                Home
-              </Link>
-            </Menu.Item>
-            <Menu.Item key="2">
-              <Link
-                to="section1"
-                spy={true}
-                smooth={true}
-                // offset={-100}
-                duration={1000}
-              >
-                What we do?
-              </Link>
-            </Menu.Item>
-            <Menu.Item key="3">
-              <Link
-                to="section2"
-                spy={true}
-                smooth={true}
-                // offset={-100}
-                duration={2000}
-              >
-                About Us
-              </Link>
-            </Menu.Item> */}
           </Menu.SubMenu>
         </Menu>
 
-        <Button className="header-button" type="primary">
+        <Button
+          className="header-button"
+          type="primary"
+          onClick={props.scrollHandler}
+        >
           Work with Us?
         </Button>
       </div>
@@ -134,7 +65,11 @@ function Header(props) {
         <h1>Delivering Success</h1>
         <h3>Emerging trucking company serving for building nations</h3>
 
-        <Button className="header-contact-button" type="primary">
+        <Button
+          className="header-contact-button"
+          type="primary"
+          onClick={props.scrollHandler}
+        >
           CONTACT US
         </Button>
       </div>
